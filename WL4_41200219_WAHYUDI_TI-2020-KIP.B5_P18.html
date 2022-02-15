@@ -1,0 +1,53 @@
+<html>
+    <head><title>Javascript</title>
+    </head>
+    <body>
+        <p><script language="javascript">
+            function tekan()
+            {
+                var namastr=(document.fform.nama.value);
+                var nimstr=(document.fform.nim.value);
+                var prodistr=(document.fform.prodi.value);
+                var kelaminstr=(document.fform.kelamin.value);
+                var agamastr=(document.fform.agama.value);
+                var statusstr=(document.fform.status.value)
+                var alamatstr=(document.fform.alamat.value);
+                var ketstr=(document.fform.ket.value);
+                document.fform.onama.value=namastr;
+                document.fform.onim.value=nimstr;
+                document.fform.oprodi.value.prodistr;
+                document.fform.okelamin.value=kelaminstr;
+                document.fform.oagama.value=agamastr;
+                document.fform.ostatus.value=statusstr
+                document.fform.oalamat.value=alamatstr;
+                document.fform.oket.value=ketstr;
+            }
+        </script></p>
+        <form name="fform">
+            <h1>Input Data Dengan Objek</h1>
+            <hr>
+            <pre>
+                Nama      : <input type="text" size="15" name="nama">
+                Nim       : <input type="text" size="15" name="nim">
+                Prodi     : <input type="text" size="15" name="prodi">
+                Kelamin   : <input type="text" size="15" name="kelamin">
+                Agama     : <input type="text" size="15" name="agama">
+                Status    : <input type="text" size="15" name="status">
+                Alamat    : <input type="text" size="25" name="alamat">
+                Komentar  : <textarea type="text" rows="3" cols="30"></textarea><br>
+
+                <input type="button" value="kirim" onclick="tekan()">
+                <input type="reset" value="ulang"><br>
+                <h2>Output</h2>
+                <input type="text" name="onama" size="15"><br>
+                <input type="text" name="onim" size="15"><br>
+                <input type="text" name="oprodi" size="15"><br>
+                <input type="text" name="okelamin" size="15"><br>
+                <input type="text" name="oagama" size="15"><br>
+                <input type="text" name="ostatus" size="15"><br>
+                <input type="text" name="oalamat" size="25"><br>
+                <textarea type="text" name="oket" rows="3" cols="30"></textarea>
+            </pre>
+        </form>
+    </body>
+</html>
