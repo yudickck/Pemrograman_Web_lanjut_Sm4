@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Percabangan tunggal dan majemuk</title>
+</head>
+<body>
+<p><script language="JavaScript">
+function tekan()
+{
+    var namastr=(document.ffrom.nama.value);
+    var alamatstr=(document.ffrom.alamat.value);
+    var ketstr=(document.ffrom.ket.value);
+    document.ffrom.onama.value=namastr;
+    document.ffrom.oalamat.value=alamatstr;
+    document.ffrom.oket.value=ketstr;
+    
+}
+</script>
+<form name="ffrom">
+	<center><h1>Input Objek Dengan Data</h1></center>
+	<hr>
+	<PRE>
+	Nama Anda : <input type="text" size="11" name ="nama"><br>
+	Alamat : <input type="text" size="25" name="alamat"><br>
+	Ket : <textarea name="ket" rows="3" cols="30"></textarea><br>
+	<br>
+	<input type="button" value="kirim" onclick="tekan()"><br>
+	<input type="reset" value="ulang"><br>
+	<h2>Output</h2>
+	<H3>Keterangan :</H3><br>
+	<input type="text" name="onama" size="12"><br>
+	<input type="text" name="oalamat" size="25"><br>
+	<textarea name="oket" rows="3" cols="30"></textarea>
+</PRE>
+</form>
+</body>
+</html>
