@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perulangan1</title>
+</head>
+<body>
+    
+    <h1>Perulangan For, Create By Wahyudi</h1>
+    <h2>NIM : 41200219 <br>Kelas : TI-2020-P18 <br>PEMROGRAMAN WEB LANJUT</h2>    
+
+    <button onclick="perulangan()">Tekan Disini!!</button>
+
+    <!-- id hasil-->
+    <div id="hasil"></div>
+
+    <script>
+        function perulangan(){
+            var text = "";
+            var x;
+            for (x = 1; x <= 100; x++){
+                text += "Nomer " + x + "<br>"
+            }
+            document.getElementById("hasil").innerHTML = text;
+        }
+    </script>
+</body>
+</html>
