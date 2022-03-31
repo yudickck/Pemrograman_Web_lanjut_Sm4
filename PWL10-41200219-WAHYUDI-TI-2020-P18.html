@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWL PERTEMUAN 10</title>
+</head>
+<body bgcolor="sky blue">
+    <script language="javascript">
+        function masukannim()
+        {
+            if (document.f.inim.value=="")
+            {
+                alert("Anda belum memasukan nim");
+            }
+        }
+        function masukannama()
+        {
+            if (document.f.inama.value=="")
+            {
+                alert("Anda belum memasukan nama");
+            }
+        }
+        function masukanalamat()
+        {
+            if (document.f.ialamat.value=="");
+            {
+                alert("Anda belum memasukan alamat");
+            }
+        }
+        function terimakasih()
+        {
+            if ((document.f.inim.value!="")&&(document.f.inama.value!="")&&
+            (document.f.ialamat.value!=""))
+            {
+                alert("Terimakasih telah mengisi Data");
+            }
+            else
+            alert("Mohon data dilengkapi");
+        }
+    </script>
+    <h1 align="center">Latihan Event OnFocus dan OnBlur</h1>
+    <hr width="600" color="black" noshade size="10">
+    <font face="arial">
+        <h3 align="center">R E G R I S T R A S I</h3>
+        <hr width="600" color="black" noshade size="2">
+        <center>
+            <form name="f" method="get">
+                <table>
+                    <tr>
+                        <td width="31%">NIM</td>
+                        <td width="7%">:</td>
+                        <td width="62%"><input type="text" name="inim" size="9"
+                            onfocus="window.status='Silahkan mengisi nim adna';"
+                            onblur="masukannim()"></td>
+                    </tr>
+                    <tr>
+                        <td width="13%">NAMA</td>
+                        <td width="7%">:</td>
+                        <td width="62%"><input type="text" name="inama" size="23"
+                            onfocus="window.status='Silahkan mengisi nama anda';"
+                            onblur="masukannama()"></td>
+                    </tr>
+                    <tr>
+                        <td width="31%">ALAMAT</td>
+                        <td width="7%">:</td>
+                        <td width="62%"><input type="text" name="inama" size="23"
+                            onfocus="window.status='Silahkan mengisi nama anda';"
+                            onblur="masukanalamat()"></td>
+                    </tr>
+                </table>
+                <hr width="600" color="black" noshade="2">
+                <p><input type="button" value="kirim" onclick="terimakasih()">
+                <input type="reset" value="Reset"></p>
+            </form>
+        </center>
+</body>
+</html>
